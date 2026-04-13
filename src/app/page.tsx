@@ -14,15 +14,15 @@ export default function Home() {
   }
 
   const handleButtonComponent = () => {
-    alert("Evento em componente")
+    alert("Evento em componente");
   }
 
   return (
     <div className="flex flex-col w-screen justify-center items-center gap-2">
-      <button onClick={handleClick}>Clique aqui</button>
-      <button onClick={handleButtonClick}>Clique aqui</button>
-      <button onClick={() => notice("SEI LÁ")}>Clique aqui</button>
-      <button onClick={handleButtonComponent}>Clique aqui</button>
+      <button className="p-3 bg-blue-700 text-white rounded-md" onClick={handleClick}>Clique aqui</button>
+      <button className="p-3 bg-blue-700 text-white rounded-md" onClick={handleButtonClick}>Clique aqui</button>
+      <button className="p-3 bg-blue-700 text-white rounded-md" onClick={() => notice("SEI LÁ")}>Clique aqui</button>
+      <button className="p-3 bg-blue-700 text-white rounded-md" onClick={handleButtonComponent}>Clique aqui</button>
     </div>
   );
 }
